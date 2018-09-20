@@ -3,3 +3,5 @@
 /.idea
 
 dlherb.iml
+package-lock.json
+/node_modules
