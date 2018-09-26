@@ -31,9 +31,9 @@ gulp.task('styles', function() {
 
 
 gulp.task('sass', function () {
-	return gulp.src('sass/*.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('css/'));
+  return gulp.src('./scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
 });
 
 // Scripts
