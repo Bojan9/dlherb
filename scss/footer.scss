@@ -1,0 +1,28 @@
+@import 'variables';
+.main-link{
+    font-size: 20px;
+
+    &--orange{
+        color: orange;
+    }
+
+    &--red{
+        color: red;
+    }
+
+
+    &-board{
+        min-height: 60px;
+        min-width: 190px;
+        background: url('../images/Bildschirmfoto%202018-07-23%20um%2017.11.26.png') no-repeat;
+        display: inline-block;
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        text-decoration: none;
+        font-family: $fontregular;
+
+    }
+
+
+}
