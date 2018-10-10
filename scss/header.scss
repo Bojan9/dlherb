@@ -1,29 +1,34 @@
 @import 'variables.scss';
 
+//WRAP
+
 .wrap {
-    width: 1920px;
     margin: 0 auto;
     background-color: white;
+    &--header{
+        border-top: 11px solid $colormain;
+        height: 265px;
+    }
+    &--content{
+        height: 3815px;
+    }
+    &--footer{
+        height: 540px;
+    }
 }
 
-.header {
-    border-top: 11px solid $colormain;
-    height: 1653px;
-}
-.body{
-    height: 2422px;
-}
-.footer{
-    height: 540px;
-}
-.navContainer {
+//NAVIGATION BAR
+
+.mainContainer {
+    margin: 0 auto;
+    &--nav{
     width: 1135px;
     height: 24px;
-    margin: 0 auto;
     margin-top: 75px;
+    }
 }
 
-.navContainer1 {
+.navLogo {
     width: 416px;
     height: 15px;
     float: left;
@@ -34,449 +39,199 @@
     font-family: $fontregular;
 }
 
-.navContainer2 {
+.nav{
     width: 672.72px;
     height: 24px;
     float: right;
-    color: #707070;
+    color: $colorreserve;
 }
 
-.navContainerButton {
+.nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li{
     height: 15px;
     float: left;
     margin-top: 9px;
-    font-size: 20px;
-    text-align: center;
     width: 110px;
-    color: #707070;
 }
 
-.marginb {
-    margin-left: 35px;
-}
-
-.navContainerIcon {
-    width: 24px;
-    height: 24px;
-    float: right;
-    font-size: 24px;
-    color: #707070;
-}
-
-.margini {
-    margin-right: 46px;
-}
-
-
-.headerLogo {
-    width: 611.27px;
-    height: 78.27px;
-    margin: 0 auto;
-    margin-top: 165px;
-    background-image: url(/images/Logo-SOH.png);
-}
-
-.headerText {
-    width: 642px;
-    height: 168px;
-    margin: 0 auto;
-    margin-top: 59px;
-    font-size: 29.1px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
-    line-height: 42.5px;
-}
-
-.headerSearch {
-    width: 616px;
-    height: 83px;
-    margin: 0 auto;
-    margin-top: 49px;
-}
-.inputSearch{
-    width: 616px;
-    height: 83px;
-    color: #FEB403;
-    font-size: 30px;
-    font-family: 'gandhi_sansregular';
-    font-style: italic;
-    padding-left: 50px;
-    border: 1px solid #D3D3D3;
-    border-radius: 50px;
-}
-.themenContainer {
-    width: 1136px;
-    height: 822px;
-    margin: 0 auto;
-    margin-top: 130px;
-}
-
-.themen {
-    height: 42px;
-    width: 1136px;
-    float: left;
-    font-size: 45px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
-}
-
-.themenImg {
-    width: 162px;
-    height: 158px;
-    float: left;
-}
-
-.top {
-    margin-top: 101px;
-}
-
-.bottom {
-    margin-top: 61px;
-}
-
-.marginimg {
-    margin-left: 162px;
-}
-
-.themenText {
-    width: 162px;
-    height: 68px;
-    float: left;
-    margin-top: 30px;
-    font-size: 25px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
+.nav a{
+    text-decoration: none;
+    color: $colorreserve;
+    display: block;
+    font-family: $fontregular;
+    font-size: 20px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
-.angeboteContainer{
-    width: 1136px;
-    height: 1410px;
-    margin: 0 auto;
-}
-.angeboteInnerContainer{
-    height: 705px;
-    width: 1136px;
-}
-.angebote{
-    width: 1136px;
-    height: 74px;
-    font-size: 45px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
-}
-.angeboteimg{
-    width: 263px;
-    height: 408px;
-    margin-top: 34px;
-    float: left;
-}
-.marginANG{
-    margin-left: 173px;
-}
-.angeboteInnerImg{
-    height: 197px;
-}
-.angeboteText{
-    height: 116px;
-    margin-top: 32px;
-}
-.angeboteButton{
-    height: 59px;
-    width: 187px;
-    margin-top: 4px;
-    background-image: url(/images/Bildschirmfoto%202018-07-23%20um%2017.11.26.png);
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    font-family: 'gandhi_sansregular';
-    text-align: center;
-}
-.a{
-    font-size: 25px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
-}
-.b{
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
-    line-height: 19px;
-}
-.c{
-    padding: 15px;
-}
-.d{
-    font-size: 25px;
-    font-family: 'gandhi_sansregular';
-    color: #FEB403;
-    margin-top: 20px;
-}
-.angeboteMore{
-    width: 163.11px;
-    height: 23.75px;
-    float: right;
-    margin-top: 54px;
-    font-size: 25px;
-    font-family: 'gandhi_sansregular';
-    color: #707070;
-}
-.fa-chevron-down{
-    float: right;
-}
-.fa-eye{
-    font-size: 25px;
-    font-family: 'gandhi_sansregular';
-    color: #FEB403;
-    margin-left: 17px;
-}
-.wissenswertesContainer{
-    width: 1137px;
-    height: 829px;
-    margin: 0 auto;
-}
-.wissenswertesInnerContainer{
-    width: 1137px;
-    height: 309px;
-    float: left;
-    margin-top: 26px;
-    border: 1px solid #707070;
-}
-.wissenswertesImage{
-    width: 263.11px;
-    height: 197.04px;
-    margin-left: 81px;
-    margin-top: 56px;
-    float: left;
-}
-.wissenswertesText{
-    width: 573px;
-    height: 137px;
-    margin-left: 75px;
-    margin-top: 86px;
-    float: left;
-}
-
-.footerContainer{
-    width: 1920px;
-    height: 448px;
-    border-top: 1px solid #707070;
-}
-
-.footerFooter{
-    width: 1920px;
-    height: 92.5px;
-    margin: 0 auto;
-    background-color: #FEB403;
-    color: white;
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    font-weight: bold;
-}
-.footerLogo{
-    width: 232.99px;
-    height: 50.38px;
-    margin-left: 389px;
-    margin-top: 101px;
-    float: left;
-    background-image:url(/images/Group%20454.png);
-}
-.footerInnerContainer{
-    width: 285px;
-    height: 448px;
-    float: left;
-    margin-left: 51px;
-}
-.footerInnerText{
-    width: 285px;
-    height: 55.51px;
-    float: left;
-    margin-top: 101px;
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    font-weight: bold;
-}
-
-.footerInnerlogo1{
-    width: 165px;
-    height: 46.5px;
-    float: left;
-    margin-top: 10px;
-    background-image: url(/images/SOH_rgb.png);
-}
-
-.footerInnerlogo2{
-    width: 125px;
-    height: 53px;
-    float: left;
-    margin-top: 30px;
-    background-image: url(/images/logo-universitaet-zuerich.png);
-}
-
-.footerContactContainer{
-    width: 196px;
-    height: 141.51px;
-    float: left;
-    margin-top: 101px;
-}
-
-.footerMailContainer{
-    width: 292px;
-    height: 201px;
-    float: left;
-    margin-top: 101px;
-    margin-left: 67px;
-}
-.e{
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    font-weight: bold;
-}
-.f{
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    line-height: 30px;
-}
-.g{
-    font-size: 20px;
-    font-family: 'gandhi_sansregular';
-    float: right;
-    margin-top: 40px;
-}
-.mail{
-    width: 292px;
-    height: 40px;
-    float: left;
-    border-bottom: 1px solid #BEBCBC;
-    font-size: 20px;
-    font-family: 'gandhi_sansregular';
-    font-style: italic;
-}
-.inputMail{
-    width: 292px;
-    height: 40px;
-    float: left;
-    color: #FEB403;
-    font-size: 20px;
-    font-family: 'gandhi_sansregular';
-    font-style: italic;
-    border-bottom: 1px solid #D3D3D3;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-.Ftext{
-    width: 197px;
-    height: 18px;
-    float: left;
-    color: white;
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    font-weight: bold;
-    margin-top: 38px;
-    margin-left: 408px;
-}
-.footerIcon{
-    font-size: 20px;
-    font-family: 'gandhi_sansregular';
-    color: white;
-    float: left;
-    height: 24px;
-    width: 30px;
-    margin-top: 38px;
-}
-.first{
-    margin-left: 190px;
-}
-.second{
-    margin-left: 60px;
-}
-.Ftext1{
-    margin-left: 215px;
-    float: left;
-    color: white;
-    font-size: 16px;
-    font-family: 'gandhi_sansregular';
-    font-weight: bold;
-    margin-top: 38px;
-    height: 18px;
-    width: 80xp;
-    text-align: right;
-}
-.one{
-    margin-left: 80px;
-}
-
+//DROPDOWN
 
 .dropdown{
     position: relative;
     display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 320px;
-    min-height: 415px;
-    box-shadow: 0px 6px 10px;
-    z-index: 1;
-    border: solid 1px #FEB403;
-    margin-top: 30px;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px;
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
-    font-family: 'gandhi_sansregular';
-    text-align: left;
-    padding-left: 50px;
+    float: right;
+    &--content{
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 320px;
+        min-height: 415px;
+        border: solid 1px $colormain;
+    }
+    &--content a{
+        color: black;
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        font-family: $fontregular;
+        text-align: left;
+        padding-left: 50px;
+        line-height: 25px;
+    }
+    &--margin{
+        margin-top: 45px;
+    }
+    &--search{
+        position: relative;
+        display: inline-block;
+    }
+    &--contentSearch{
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 425px;
+        min-height: 275px;
+        border: solid 1px $colormain;
+        margin-top: 46px;
+    }
+    &--background{
+        width: 425px;
+        height: 60px;
+        background-color: $colormain;
+        float: left;
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 25px;
+        font-family: $fontregular;
+        text-align: left;
+    }
+    &--innerSearch{
+        width: 356px;
+        height: 60px;
+        float: left;
+        margin-left: 34px;
+        margin-top: 37px;
+    }
+    &--button{
+        width: 150px;
+        height: 60px;
+        float: right;
+        margin-right: 34px;
+        margin-top: 20px;
+        background-color: $colormain;
+    }
+    &--inputSearch{
+        width: 316px;
+        height: 60px;
+        color: $colorreserve;
+        font-size: 25px;
+        font-family: 'gandhi_sansitalic';
+        padding-left: 30px;
+        border: 1px solid #D3D3D3;
+    }
+    &--user{
+        position: relative;
+        display: inline-block;
+    }
+    &--contentUser{
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 425px;
+        min-height: 558px;
+        border: solid 1px $colormain;
+        margin-top: 46px;
+
+    }
+    &--margina{
+        margin-top: 49px;
+    }
+    &--marginb{
+        margin-top: 38px;
+    }
+    &--text{
+        text-align: left;
+        font-size: 20px;
+        font-family: $fontregular;
+        color: $colorreserve;
+        margin-bottom: 10px;
+    }
+    &--buttonUser{
+        height: 60px;
+        width: 186px;
+        float: right;
+        margin-right: 34px;
+        margin-top: 20px;
+        background-color: $colormain;
+    }
+    &--innerUser{
+        width: 356px;
+        height: 95px;
+        float: left;
+        margin-left: 34px;
+        margin-top: 25px;
+    }
+    &--footer{
+        height: 125px;
+        border-top: 1px solid $colormain;
+        margin-top: 111px;
+    }
+    &--textcenter{
+        text-align: center;
+        font-family: $fontregular;
+        font-size: 20px;
+        color: $colorreserve;
+        margin-top: 30px;
+    }
+    &--textbottom{
+        text-align: center;
+        font-family: $fontregular;
+        font-size: 25px;
+        color: $colormain;
+        margin-top: 30px;
+    }
 }
 
-.margindropdown{
-   margin-top: 45px;
-}
-
-.dropdownSearch{
-    position: relative;
-    display: inline-block;
-}
-.dropdown-contentSearch{
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 425px;
-    min-height: 275px;
-    box-shadow: 0px 6px 10px;
-    z-index: 1;
-    border: solid 1px #FEB403;
-    margin-top: 30px;
-}
-.background{
-    width: 424px;
-    height: 62px;
-    background-color: #FEB403;
-}
-.dropdown-contentSearch a{
-    color: white;
+.Suche{
     padding: 20px;
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
-    font-family: 'gandhi_sansregular';
+    color: white;
+    font-size: 25px;
+}
+.textdropdown{
+    margin-left: 34px;
     text-align: left;
-    padding-left: 50px;
+    color: #BCBBBB;
+    font-size: 20px;
+    font-family: $fontregular;
 }
 
 .dropdown:hover{
-    .dropdown-content{display: block}
+    .dropdown--content{display: block}
+
 }
-
-.dropdown-content a:hover  {background-color: #FEB403;}
-.dropdown-content a:hover {color: white;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropdown {color: #FEB403;}
-
-.dropdownSearch:hover .dropdown-contentSearch {display: block;}
-.dropdownSearch:hover .dropdownSearch {color: #FEB403;}
+.dropdown--search:hover{
+    .dropdown--contentSearch {display: block;}
+}
+.dropdown--user:hover{
+    .dropdown--contentUser {display: block;}
+}
+.dropdown--content a:hover  {background-color: $colormain;}
+.dropdown--content a:hover {color: white;}

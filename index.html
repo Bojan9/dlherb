@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <header>
-         <div class="wrap header">
-            <div class="navContainer">
-                <div class="navContainer1">Prävention Gesundheit Solothurn</div>
 
-                <div class="navContainer2">
-                    <div class="navContainerButton">Angebote</div>
-                    <div class="navContainerButton marginb">Anbieter</div>
-                    <div class="navContainerButton marginb dropdown">Themen
-                        <div class="dropdown-content">
-                            <a class="margindropdown" href="#">Psychische Gesundheit</a>
+    <div class="wrap wrap--header">
+        <div class="mainContainer mainContainer--nav">
+            <div class="navLogo">Prävention Gesundheit Solothurn</div>
+            <div class="nav">
+                <ul>
+                    <li class="Angebote"><a href="#">Angebote</a></li>
+                    <li class="Anbieter"><a href="#">Anbieter</a></li>
+                    <li class="Themen dropdown"><a href="#">Themen</a>
+                        <div class="dropdown--content">
+                            <a class="dropdown--margin" href="#">Psychische Gesundheit</a>
                             <a href="#">Körperliche Gesundheit</a>
                             <a href="#">Ernährung</a>
                             <a href="#">Bewegung</a>
@@ -29,58 +29,104 @@
                             <a href="#">Sucht</a>
                             <a href="#">Budget und Schulden</a>
                         </div>
-                    </div>
-                        <div class="navContainerButton marginb">Dossiers</div>
-                        <div class="navContainerIcon dropdownSearch">
-                            <i class="fas fa-search"></i>
-                            <div class="dropdown-contentSearch">
-                                <div class="background">
-                                <a href="#">Suche</a>
-                                    </div>
+                    </li>
+                    <li class="Dossiers"><a href="#">Dossiers</a></li>
+                    <li class="icon dropdown--user"><a href="#">
+                            <img src="/images/icon/icon-search.png" width="22px" height="22px">
+
+                            <div class="dropdown--contentUser">
+                                <div class="dropdown--background"><div class="Suche">Benutzerprofil</div></div>
+
+
+                                <div class="dropdown--innerUser dropdown--margina">
+                                    <h1 class="dropdown--text">Benutzername</h1>
+                                    <input type="text" class="dropdown--inputSearch" placeholder="Benutzername">
+                                </div>
+
+
+                                <div class="dropdown--innerUser dropdown--marginb">
+                                    <h1 class="dropdown--text">Passwort</h1>
+                                    <input type="text" class="dropdown--inputSearch" placeholder="Passwort">
+                                </div>
+
+                                <div class="textdropdown" href="#">Passwort vergessen?</div>
+
+                                <div class="dropdown--buttonUser">
+                                    <div class="Suche">Einloggen ><img src="/images/icon/icon-search.png" width="10px" height="10px">
+                                    </div></div>
+
+                                <div class="dropdown--footer">
+                                    <h1 class="dropdown--textcenter">Noch keinen Benutzerprofil?</h1>
+                                    <h1 class="dropdown--textbottom">Registrieren ></h1>
+                                </div>
                             </div>
-                    </div>
-                        <div class="navContainerIcon margini"><i class="far fa-user"></i></div>
-                    </div>
-                </div>
-                <div class="headerLogo"></div>
-                <div class="headerText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam dasein et
-                    <a class="main-link main-link--red" href="#">Hellooo</a>
 
+                        </a></li>
 
-                    <a class="main-link-board" href="#">eden</a>
-
-
-
-                    voluptua.</div>
-                <div class="headerSearch">
-                    <input type="text" class="inputSearch" placeholder="Begriff eingeben">
-                </div>
-
-                <div class="themenContainer">
-                    <div class="themen">Themen</div>
-
-                    <div class="themenImg top"><img src="images/test_soh_icon.png"></div>
-                    <div class="themenImg top marginimg"><img src="images/Icons-_0004_Ebene%200%20Kopie.png"></div>
-                    <div class="themenImg top marginimg"><img src="images/Icons-_0003_Ebene%200%20Kopie%202.png"></div>
-                    <div class="themenImg top marginimg"><img src="images/Icons-_0002_Ebene%200%20Kopie%203.png"></div>
-
-                    <div class="themenText top">Psychische Gesundheit</div>
-                    <div class="themenText top marginimg">Körperliche Gesundheit</div>
-                    <div class="themenText top marginimg">Ernährung</div>
-                    <div class="themenText top marginimg">Bewegung</div>
-
-
-                    <div class="themenImg bottom marginimg"><img src="images/Icons-_0001_Ebene%200%20Kopie%204.png"></div>
-                    <div class="themenImg bottom marginimg"><img src="images/Icons-_0000_Ebene%200%20Kopie%205.png"></div>
-                    <div class="themenImg bottom marginimg"><img src="images/Icons-_0005_Ebene%201.png"></div>
-
-                    <div class="themenText bottom marginimg">Gewalt</div>
-                    <div class="themenText bottom marginimg">Sucht</div>
-                    <div class="themenText bottom marginimg">Budget und Schulden</div>
-                </div>
+                    <li class="icon dropdown--search"><a href="#">
+                            <img src="/images/icon/icon-search.png" width="22px" height="22px">
+                            <div class="dropdown--contentSearch">
+                                <div class="dropdown--background"><div class="Suche">Suche</div></div>
+                                <div class="dropdown--innerSearch">
+                                    <input type="text" class="dropdown--inputSearch" placeholder="Lorem ipsum">
+                                </div>
+                                <div class="dropdown--button">
+                                    <div class="Suche">Suchen ><img src="/images/icon/icon-search.png" width="10px" height="10px">
+                                    </div></div>
+                            </div>
+                         </a>
+                    </li>
+                </ul>
             </div>
-    </header>
-    <div class="wrap body">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="wrap wrap--content">
+        <div class="headerLogo"></div>
+        <div class="headerText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam dasein et
+            <a class="main-link main-link--red" href="#">Hellooo</a>
+
+
+            <a class="main-link-board" href="#">eden</a> voluptua.
+
+
+
+        </div>
+        <div class="headerSearch">
+            <input type="text" class="inputSearchContent" placeholder="Begriff eingeben">
+        </div>
+
+        <div class="themenContainer">
+            <div class="themen">Themen</div>
+
+            <div class="themenImg top"><img src="images/test_soh_icon.png"></div>
+            <div class="themenImg top marginimg"><img src="images/Icons-_0004_Ebene%200%20Kopie.png"></div>
+            <div class="themenImg top marginimg"><img src="images/Icons-_0003_Ebene%200%20Kopie%202.png"></div>
+            <div class="themenImg top marginimg"><img src="images/Icons-_0002_Ebene%200%20Kopie%203.png"></div>
+
+            <div class="themenText top">Psychische Gesundheit</div>
+            <div class="themenText top marginimg">Körperliche Gesundheit</div>
+            <div class="themenText top marginimg">Ernährung</div>
+            <div class="themenText top marginimg">Bewegung</div>
+
+
+            <div class="themenImg bottom marginimg"><img src="images/Icons-_0001_Ebene%200%20Kopie%204.png"></div>
+            <div class="themenImg bottom marginimg"><img src="images/Icons-_0000_Ebene%200%20Kopie%205.png"></div>
+            <div class="themenImg bottom marginimg"><img src="images/Icons-_0005_Ebene%201.png"></div>
+
+            <div class="themenText bottom marginimg">Gewalt</div>
+            <div class="themenText bottom marginimg">Sucht</div>
+            <div class="themenText bottom marginimg">Budget und Schulden</div>
+        </div>
+
+
         <div class="angeboteContainer">
             <div class="angeboteInnerContainer">
                 <div class="angebote">Top Angebote<i class="far fa-eye">Alle Angebote ansehen</i></div>
@@ -177,49 +223,46 @@
             <div class="angeboteMore">Mehr laden <i class="fas fa-chevron-down"></i></div>
         </div>
     </div>
-    <footer>
-        <div class="wrap footer">
-            <div class="footerContainer">
-                <div class="footerLogo"></div>
-                <div class="footerInnerContainer">
-                    <div class="footerInnerText">Einen Zusammenarbeit von</div>
-                    <div class="footerInnerlogo1"></div>
-                    <div class="footerInnerlogo2"></div>
-                </div>
-                <div class="footerContactContainer">
-                    <div class="e">Kontakt</div><br><br>
-                    <div class="f">Lorem ipsum dolor<br> Sit amet consetetur<br> 2345 Diam nonumy </div>
-                </div>
-                <div class="footerMailContainer">
-                    <div class="e">Newsletter anmelden</div><br><br><br>
-                    <div class="mail">
-                        <input type="text" class="inputMail" placeholder="Email Adresse">
-                    </div>
-                    <div class="g">Senden</div>
-                </div>
+
+    <div class="wrap wrap--footer">
+        <div class="footerContainer">
+            <div class="footerLogo"></div>
+            <div class="footerInnerContainer">
+                <div class="footerInnerText">Einen Zusammenarbeit von</div>
+                <div class="footerInnerlogo1"></div>
+                <div class="footerInnerlogo2"></div>
             </div>
-
-            <div class="footerFooter">
-                <div class="Ftext">© 2018 Solothurner Spital </div>
-                <div class="footerIcon first"><i class="fab fa-facebook-f"></i></div>
-                <div class="footerIcon second"><i class="fab fa-google"></i></div>
-                <div class="footerIcon second"><i class="fab fa-instagram"></i></div>
-                <div class="footerIcon second"><i class="fab fa-twitter"></i></div>
-                <div class="Ftext1">AGBs</div>
-                <div class="Ftext1 one">Impressum</div>
+            <div class="footerContactContainer">
+                <div class="e">Kontakt</div><br><br>
+                <div class="f">Lorem ipsum dolor<br> Sit amet consetetur<br> 2345 Diam nonumy </div>
             </div>
-
-
+            <div class="footerMailContainer">
+                <div class="e">Newsletter anmelden</div><br><br><br>
+                <div class="mail">
+                    <input type="text" class="inputMail" placeholder="Email Adresse">
+                </div>
+                <div class="g">Senden</div>
+            </div>
         </div>
-    </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
+        <div class="footerFooter">
+            <div class="Ftext">© 2018 Solothurner Spital </div>
+            <div class="footerIcon first"><i class="fab fa-facebook-f"></i></div>
+            <div class="footerIcon second"><i class="fab fa-google"></i></div>
+            <div class="footerIcon second"><i class="fab fa-instagram"></i></div>
+            <div class="footerIcon second"><i class="fab fa-twitter"></i></div>
+            <div class="Ftext1">AGBs</div>
+            <div class="Ftext1 one">Impressum</div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
     <script type="text/javascript" src="js/main.js"></script>
-    </body>
+</body>
 
 
 
